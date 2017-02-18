@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Demo
 {
@@ -6,6 +7,7 @@ namespace Demo
     {
         public int Id { get; set; }
         public int Number { get; set; }
+        public DateTime CreatedOn { get; set; }
         public List<OrderItem> Items { get; set; }
     }
 }

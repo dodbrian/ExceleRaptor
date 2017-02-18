@@ -10,9 +10,9 @@ namespace Demo
         {
             var data = new List<Order>
             {
-                new Order { Id = 1, Number = 100, Items = new List<OrderItem>
+                new Order { Id = 1, Number = 100, CreatedOn = DateTime.Now, Items = new List<OrderItem>
                                         {
-                                            new OrderItem { Id = 1, CreatedOn = DateTime.Now, Name = "Chair", Quantity = 5 }
+                                            new OrderItem { Id = 1, Name = "Chair", Quantity = 5 }
                                         }
                           }
             };
@@ -23,7 +23,9 @@ namespace Demo
                 b1 => b1.Bind("Id", v => v.Id)
                         .Bind("Number", v => v.Number)
                         .Band("OrderItems", v => v.Items, b2 => b2.Bind("Name", v => v.Name)
-                                                                  .Bind("Quantity", v => v.Quantity)));
+                                                                  .Bind("Quantity", v => v.Quantity)
+                                                                  .Bind("Id", v => v.Id))
+                        .Bind("CreatedOn", v => v.CreatedOn));
 
             report.Render();
         }
