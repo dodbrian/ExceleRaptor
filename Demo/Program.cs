@@ -17,7 +17,7 @@ namespace Demo
                           }
             };
 
-            var report = new Report();
+            var report = new Report(new TempAdapter());
 
             report.Band("Orders", data,
                 b1 => b1.Bind("Id", v => v.Id)
@@ -27,7 +27,7 @@ namespace Demo
                                                                   .Bind("Id", v => v.Id))
                         .Bind("CreatedOn", v => v.CreatedOn));
 
-            report.Render();
+            report.Render("Templates\\BasicReport.xlsx");
         }
     }
 }
