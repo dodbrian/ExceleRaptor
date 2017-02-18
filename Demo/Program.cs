@@ -1,4 +1,5 @@
 ﻿using ExceleRaptor;
+using ExceleRaptor.ClosedXML;
 using System;
 using System.Collections.Generic;
 
@@ -17,7 +18,7 @@ namespace Demo
                           }
             };
 
-            var report = new Report(new TempAdapter());
+            var report = new Report(new ClosedXMLSpreadsheetAdapter());
 
             report.Band("Orders", data,
                 b1 => b1.Bind("Id", v => v.Id)
