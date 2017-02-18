@@ -1,4 +1,4 @@
-﻿namespace Demo
+﻿namespace ExceleRaptor.Demo
 {
     public class OrderItem
     {

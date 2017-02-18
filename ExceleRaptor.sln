@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceleRaptor", "ExceleRaptor\ExceleRaptor.csproj", "{32C712A3-6A3C-4142-9920-2119391A4492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{CAD3961A-7D44-4B66-AC6D-3FFA9D3F1563}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceleRaptor.Demo", "ExceleRaptor.Demo\ExceleRaptor.Demo.csproj", "{CAD3961A-7D44-4B66-AC6D-3FFA9D3F1563}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B03AEF2-DA08-4B24-A0EA-489B7F2E2E43}"
 	ProjectSection(SolutionItems) = preProject

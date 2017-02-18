@@ -1,9 +1,8 @@
-﻿using ExceleRaptor;
-using ExceleRaptor.ClosedXML;
+﻿using ExceleRaptor.ClosedXML;
 using System;
 using System.Collections.Generic;
 
-namespace Demo
+namespace ExceleRaptor.Demo
 {
     internal class Program
     {
